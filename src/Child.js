@@ -8,7 +8,7 @@ class Child extends Component {
       <div
         className="child"
         style={{backgroundColor: "#FFF"}}
-        onClick={this.props.handleColorChange}
+        onClick={() => this.props.handleColorChange(getRandomColor())}
       ></div>
     )
   }
